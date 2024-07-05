@@ -5,11 +5,9 @@ page_urls(__file__)
 
 """
 ### 動くプロトタイプ制作
-ここでは以下の内容を扱います。
-- 基本的なPythonの記法
+以下を題材に、Streamlitで動くプロトタイプを制作するための基本的な方法について紹介します。
 
-- 少し応用的なStreamlitの使い方
-- バックエンドサーバの分離と、それとの連携の基礎
-- 並列処理による高速化方法の一例
-- マルチページアプリの実装例
+- ソースコード: [streamlit-example / prototype-example](https://github.com/streamlit-example/prototype-example)
+- アプリ: [Prototype Sample](https://prototype-example-evfgrg433dvacpfwkdrulu.streamlit.app/)
+
 """

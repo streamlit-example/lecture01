@@ -5,13 +5,8 @@ page_urls(__file__)
 
 """
 ### ワイヤーフレーム制作
-ここでは以下の内容を扱います。
-- ごく最低限のPythonの記法
+以下を題材に、Streamlitでワイヤーフレームを制作するための基本的な方法について紹介します。
 
-- StreamlitによるUI定義の基本
-- わからないことへの対処方法
-    - Pythonの記法の調べ方
-    - Streamlitの書き方
-    - エラーの解決方法
-- コードを複数ファイルに分割する方法
+- ソースコード: [streamlit-example / wireframe-example](https://github.com/streamlit-example/wireframe-example/)
+- アプリ: [Wireframe Sample](https://wireframe-example-rammpl3kzfse7okypdcutk.streamlit.app/)
 """

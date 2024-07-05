@@ -40,7 +40,7 @@ PAGES = Page(
             children=[
                 Page(file="pages/b-1.py", title="Python（基礎）"),
                 Page(file="pages/b-2.py", title="UI定義（基礎）"),
-                Page(file="pages/b-3.py", title="ファイルの分割"),
+                Page(file="pages/b-3.py", title="読みやすいコードの書き方"),
                 Page(file="pages/b-4.py", title="わからないことへの対処方法"),
             ],
         ),
@@ -50,7 +50,11 @@ PAGES = Page(
             icon="🎮",
             category="c",
             children=[
-                Page(file="pages/c-1.py", title="UI定義（応用）"),
+                Page(file="pages/c-1.py", title="Python（基礎2）"),
+                Page(file="pages/c-2.py", title="UI定義（応用）"),
+                Page(file="pages/c-3.py", title="API連携（基礎）"),
+                Page(file="pages/c-4.py", title="並列処理の実装例"),
+                Page(file="pages/c-5.py", title="マルチページアプリの実装例"),
             ],
         ),
     ],

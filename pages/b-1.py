@@ -129,6 +129,22 @@ print(8-5)
 def func3():
     return 3+
 ```
+##### キーワード引数
+関数を定義するとき、引数にデフォルト値を設定することができます。
+```Python
+def greet(name, greeting="Hello"):
+    return f"{greeting}, {name}!"
+
+# キーワード引数を使って関数を呼び出す
+print(greet(name="Alice", greeting="Hi"))  # Hi, Alice!
+print(greet(name="Bob"))                   # Hello, Bob!
+```
+上の例の `greeting` のような引数をキーワード引数と呼びます。キーワード引数の利点は以下です。  
+- 引数の順番を意識しなくてよい
+- 引数の意味が明確になり、コードの可読性が向上する
+- デフォルト値を利用する場合は記載を省略できる
+
+キーワード引数は通常の引数（非キーワード引数）の後に定義する必要があることだけ注意してください。
 """
 
 
@@ -185,7 +201,7 @@ array = np.array([1, 2, 3])
 print(array)
 ```
 
-### 4. 外部パッケージのインポート
+### 4. 外部パッケージの利用
 標準ライブラリ以外にも、外部のパッケージをインストールして使うことができます。  
 外部パッケージは通常、`pip`を使ってインストールします。（※これはコマンドプロンプトで実行するコードです！）
 ```sh
@@ -198,7 +214,7 @@ import streamlit as st
 st.title("Python（基礎）")
 ```
 
-### 5. 自作モジュールのインポート
+### 5. 自作モジュールの利用
 自分で作成したモジュールをインポートすることもできます。
 
 フォルダ構成:
@@ -209,25 +225,25 @@ st.title("Python（基礎）")
     └─ m2.py
 ```
 
-`m1.py`:
+`m1.py`
 ```python
 def greet1(name):
     return f"Hello, {name}!"
 ```
 
-`m2.py`:
+`m2.py`
 ```python
 def greet2(name):
     return f"Good morning, {name}!"
 ```
 
-`main.py`:
+`main.py`
 ```python
 from m1 import greet1
 from dir2.m2 import greet2
 
-print(m1.greet1("Alice"))  # Hello, Alice!
-print(m2.greet2("Bob"))  # Good morning, Bob!
+print(greet1("Alice"))  # Hello, Alice!
+print(greet2("Bob"))    # Good morning, Bob!
 ```
 """
 
